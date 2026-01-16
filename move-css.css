@@ -1,0 +1,166 @@
+ .navbar {
+    display: flex;
+    justify-content: flex-end; /* Pushes the logo to the left and links to the right */
+    align-items: center;
+    background-color: #ececec;
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+#home {
+    font-weight: bold;
+}
+
+/* Styles for navigation links container */
+.nav-links {
+    display: flex;
+    
+    gap: 15px; /* Adds space between links */
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+.image1-page1 {
+        
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;      
+        height: 50%vh;
+        object-fit: cover;
+              }
+    
+    
+
+/* Responsive adjustments for small screens */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column; /* Stacks items vertically on small screens */
+        align-items: flex-end; /* Aligns all items to the right edge */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%; /* Makes links take full width for better tapping */
+        text-align: right; /* Aligns text to the right */
+        gap: 0;
+        margin-top: 10px;
+    }
+
+    .nav-links a {
+        padding: 10px 20px;
+        display: block; /* Makes each link a block for full width hover area */
+    }        
+
+    .name-text {
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .tagline {
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        text-align: center;
+        font-size: 18px;
+        top: 40%;
+    }
+
+    .image1-page1 {
+        height: auto;
+        max-height: 300px;
+    }
+    
+}
+
+.flex-container {
+    display: flex;
+}
+
+.half-div {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.half-div img {
+    width: 75%;
+    height: auto;
+}
+
+.half-div ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.half-div li {
+    margin: 5px 0;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.half-div button {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid orange;
+    color: black;
+    padding: 15px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    
+}
+
+.training-title {
+    flex: 0 0 20%;
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    /* slight slant for a subtle italic look; fallback to italic */
+    font-style: oblique 12deg;
+    font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.page1images {
+    position: relative;
+}
+
+.name-text {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tagline {
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Cormorant Garamond', serif;
+}
